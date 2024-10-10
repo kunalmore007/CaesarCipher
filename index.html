@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ceaser Cypher || Encryption</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encrypt & Decrypt</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
 
-        <!-- Main Heading -->
-        <h1>Caesar Cipher</h1>
+  <div class="container">
+    <!-- Main Heading -->
+    <h1>Caesar Cipher</h1>
 
-        <h2>Text Encryptor/Decryptor</h2>
-    
-        <div class="input-group">
-          <label for="plainText">Plain Text</label>
-          <textarea id="plainText" placeholder="Enter plain text here"></textarea>
-        </div>
-    
-        <div class="input-group">
-          <label for="cipherText">Cipher Text</label>
-          <textarea id="cipherText" placeholder="Cipher text will appear here"></textarea>
-        </div>
-    
-        <div class="button-group">
-          <button id="encryptBtn">Encrypt</button>
-          <button id="decryptBtn">Decrypt</button>
-        </div>
+    <h2>Text Encryptor/Decryptor</h2>
+
+    <div class="input-group">
+      <label for="plainText">Plain Text</label>
+      <textarea id="plainText" placeholder="Enter plain text here"></textarea>
     </div>
-    <script src="script.js"></script>
+
+    <div class="input-group">
+      <label for="cipherText">Cipher Text</label>
+      <textarea id="cipherText" placeholder="Cipher text will appear here"></textarea>
+    </div>
+
+    <div class="button-group">
+      <button id="encryptBtn">Encrypt</button>
+      <button id="decryptBtn">Decrypt</button>
+    </div>
+  </div>
+
+  <!-- Modal for taking Shift Pattern -->
+  <div id="shiftModal" class="modal">
+    <div class="modal-content">
+      <h2>Enter Shift By</h2>
+      <input type="number" id="shiftInput" placeholder="Shift By..." min="1" max="25">
+      <div class="modal-buttons">
+        <button id="modalSubmit">Submit</button>
+        <button id="modalCancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
